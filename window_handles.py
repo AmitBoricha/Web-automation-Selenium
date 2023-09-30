@@ -16,3 +16,8 @@ driver.execute_script("window.open('https://www.google.com', '_blank');")
 # Switch to the newly opened window
 new_window_handle = driver.window_handles[-1]
 driver.switch_to.window(new_window_handle)
+
+print(driver.title)  # Print the title of the new window
+
+# Switch back to the main window
+driver.switch_to.window(main_window_handle)
