@@ -29,3 +29,6 @@ driver.close()
 
 # Switch back to the main window (if needed)
 driver.switch_to.window(main_window_handle)
+
+# Close the main window and quit the WebDriver
+driver.quit()
