@@ -21,3 +21,5 @@ print(driver.title)  # Print the title of the new window
 
 # Switch back to the main window
 driver.switch_to.window(main_window_handle)
+
+print(driver.title)  # Print the title of the main window
