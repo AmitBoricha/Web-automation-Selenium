@@ -33,3 +33,7 @@ if __name__ == "__main__":
     # Locate and extract data from a table with the specified ID
     table_id = "example-table"
     table_data = get_table_data(driver, table_id)
+
+    if table_data:
+        for row in table_data:
+            print(" | ".join(row))  # Print table data with pipe separators
