@@ -21,3 +21,8 @@ def get_table_data(driver, table_id):
             columns = row.find_elements(By.TAG_NAME, "td")
             row_data = [column.text for column in columns]
             table_data.append(row_data)
+
+        return table_data
+        except:
+        print("Table with ID '{}' not found.".format(table_id))
+        return None
