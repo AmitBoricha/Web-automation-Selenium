@@ -10,3 +10,7 @@ text_box.send_keys("my_username")
 
 # Find and interact with a button element
 submit_button = driver.find_element_by_id("submit_button")
+submit_button.click()
+
+# Close the browser
+driver.quit()
