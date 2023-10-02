@@ -37,3 +37,5 @@ if __name__ == "__main__":
     if table_data:
         for row in table_data:
             print(" | ".join(row))  # Print table data with pipe separators
+
+    close_browser(driver)
