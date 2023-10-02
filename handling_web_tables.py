@@ -26,3 +26,7 @@ def get_table_data(driver, table_id):
         except:
         print("Table with ID '{}' not found.".format(table_id))
         return None
+# Example usage:
+if __name__ == "__main__":
+    driver = open_browser()
+    driver.get("https://www.example.com")
