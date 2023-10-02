@@ -30,3 +30,6 @@ def get_table_data(driver, table_id):
 if __name__ == "__main__":
     driver = open_browser()
     driver.get("https://www.example.com")
+    # Locate and extract data from a table with the specified ID
+    table_id = "example-table"
+    table_data = get_table_data(driver, table_id)
