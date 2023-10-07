@@ -14,3 +14,6 @@ action = ActionChains(driver)
 # Perform a keyboard event (typing text) in the input field
 text_to_type = "Hello, Selenium"
 action.send_keys_to_element(text_input_field, text_to_type).perform()
+
+# Close the browser
+driver.quit()
