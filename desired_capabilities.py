@@ -14,3 +14,6 @@ driver = webdriver.Chrome(desired_capabilities=chrome_capabilities)
 
 # Perform actions with the WebDriver
 driver.get("https://www.example.com")
+
+# Close the browser
+driver.quit()
