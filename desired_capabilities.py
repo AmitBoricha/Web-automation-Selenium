@@ -9,3 +9,8 @@ chrome_capabilities = {
         "args": ["--start-maximized", "--disable-extensions"]
     }
 }
+
+driver = webdriver.Chrome(desired_capabilities=chrome_capabilities)
+
+# Perform actions with the WebDriver
+driver.get("https://www.example.com")
