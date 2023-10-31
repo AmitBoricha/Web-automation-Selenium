@@ -15,3 +15,7 @@ class TestGithubPage(BaseClass):
 
     def test_2_login(self):
         self.log().info("Github Login Page Good case Test Started")
+        self.get_element(USERNAME_INPUT).clear()
+        self.get_element(PASSWORD_INPUT).clear()
+        self.get_element(USERNAME_INPUT).send_keys('jagwithyou')  # right Username
+        self.get_element(PASSWORD_INPUT).send_keys('Jag143NBS@#')  # right Password
