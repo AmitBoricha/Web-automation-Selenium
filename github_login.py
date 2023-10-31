@@ -7,3 +7,5 @@ class TestGithubPage(BaseClass):
     def test_1_login_wrong_username_wrong_password(self):
         self.log().info("Github Login Page Bad case Test Started")
         self.driver.get("https://github.com/login")
+        self.get_element(USERNAME_INPUT).send_keys('Test')  # wrong Username
+        self.get_element(PASSWORD_INPUT).send_keys('test123')  # Wrong Password
