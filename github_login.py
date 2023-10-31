@@ -12,3 +12,6 @@ class TestGithubPage(BaseClass):
         self.get_element(SIGNIN_BUTTON).submit()
         self.log().info("Test Success")
         assert self.get_element(SIGNIN_BUTTON).is_displayed()
+
+    def test_2_login(self):
+        self.log().info("Github Login Page Good case Test Started")
