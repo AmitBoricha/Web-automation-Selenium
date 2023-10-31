@@ -19,3 +19,5 @@ class TestGithubPage(BaseClass):
         self.get_element(PASSWORD_INPUT).clear()
         self.get_element(USERNAME_INPUT).send_keys('jagwithyou')  # right Username
         self.get_element(PASSWORD_INPUT).send_keys('Jag143NBS@#')  # right Password
+        self.get_element(SIGNIN_BUTTON).submit()
+        self.log().info("Test Success")
