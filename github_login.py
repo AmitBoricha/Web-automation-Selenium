@@ -9,3 +9,6 @@ class TestGithubPage(BaseClass):
         self.driver.get("https://github.com/login")
         self.get_element(USERNAME_INPUT).send_keys('Test')  # wrong Username
         self.get_element(PASSWORD_INPUT).send_keys('test123')  # Wrong Password
+        self.get_element(SIGNIN_BUTTON).submit()
+        self.log().info("Test Success")
+        assert self.get_element(SIGNIN_BUTTON).is_displayed()
